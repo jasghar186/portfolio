@@ -1,0 +1,78 @@
+// style switcher started
+.style_switcher {
+    position: fixed;
+    top: 100px;
+    left: -200px;
+    background-color: white;
+    width: 200px;
+   z-index: 5;
+    padding: 1em 0;
+    h3 {
+        margin-bottom: 0.7em;
+        font-size: 16px;
+        font-family: monospace;
+    }
+    &__settings {
+        position: absolute;
+        top: 0;
+        right: -45px;
+        width: 45px;
+        height: 45px;
+        background-color: $subHeadingColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        i {
+            font-size: 1.5rem;
+            color: $primaryBlack;
+            color: white;
+            animation: rotate 1.9s linear infinite;
+            @keyframes rotate {
+                from {
+                    transform: rotate(0);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+    &__colors {
+        display: grid;
+        grid-template-columns: 30px 30px 30px 30px;
+        grid-gap: 1em;
+        overflow: hidden;
+        justify-content: center;
+        .color {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .color1 {
+            background-color: $subHeadingColor;
+        }
+        .color2 {
+            background-color: #e67e22;
+        }
+        .color3 {
+            background-color: #1abc9c;
+        }
+        .color4 {
+            background-color: #3498db;
+        }
+        .color5 {
+            background-color: #e74c3c;
+        }
+        .color6 {
+            background-color: #9b59b6;
+        }
+        .color7 {
+            background-color: #f39c12;
+        }
+        .color8 {
+            background-color: #2980b9;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+// contact section started
+.contact {
+    padding: 5em 1rem;
+
+    @include meta($subHeadingColor, $thm-base, $thm-base, $white);
+
+    &__info {
+        .personal_info {
+            padding-top: 2em;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 1em;
+            @include tablet {
+                grid-column-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+            }
+            @include desktop {
+                grid-template-columns: 1fr 1fr 1fr ;
+                .fiverr_box {
+                    grid-column: 1 / 4;
+                }
+            }
+            @include large_desktop {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                .fiverr_box {
+                    grid-column: auto;
+                }
+            }
+
+            div {
+                padding: 30px;
+                background-color: $primaryBlack;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                    background-size: cover;
+                    background-position: center;
+                }
+                i {
+                    width: 60px;
+                    height: 60px;
+                    font-size: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $subHeadingColor;
+                    border: 1px solid $subHeadingColor;
+                    margin-bottom: 25px;
+                    border-radius: 50%;
+                }
+                h3 {
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: $white;
+                    font-weight: 400;
+                    margin-bottom: 8px;
+                }
+                a {
+                    color: $paraColor;
+                    font-size: 15px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+// footer started
+.footer {
+    padding: 3em 1rem;
+    background-color: $primaryBlack;
+    &__info {
+        display: flex;
+        justify-content: center;
+        * {
+            color: $paraColor;
+        }
+    }
+}

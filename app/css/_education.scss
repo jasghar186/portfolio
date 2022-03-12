@@ -1,0 +1,78 @@
+// education section started
+.education {
+    padding: 5em 1rem;
+
+    @include meta($subHeadingColor, $thm-base, $thm-base, $white);
+
+    &__info {
+        padding-top: 2em;
+        .education_wrapper {
+            @include tablet {
+                padding-top: 30px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .school {
+            
+            padding: 28px 0; //15px;
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                padding: 0 35px;
+                // background-color: red;
+                width: 50%;
+            }
+
+            h3 {
+                font-size: 22px;
+                margin: 3px 0 20px;
+                color: $subHeadingColor;
+                @include mobile {
+                    text-align: right;
+                }
+            }
+            p {
+                color: $paraColor;
+                font-size: 20px;
+                font-weight: 500;
+                @include mobile {
+                    text-align: right;
+                }
+                @include tablet {
+                    text-align: left;
+                }
+            }
+        }
+        .degree {
+            // padding: 0 15px;
+            @include tablet {
+                width: 50%;
+            }
+            .degree_details {
+                padding: 35px 40px;
+                border-radius: 4px;
+                background-color: $primaryBlack;
+                i {
+                    color: $subHeadingColor;
+                    font-size: 40px;
+                }
+
+                h3 {
+                    margin: 7px 0 20px;
+                    font-size: 22px;
+                    line-height: 32px;
+                    color: $subHeadingColor;
+                }
+                p {
+                    text-transform: capitalize;
+                    font-size: 15px;
+                    line-height: 26px;
+                    color: $paraColor;
+                }
+            }
+        }
+    }
+}
