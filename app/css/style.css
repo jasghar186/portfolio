@@ -675,6 +675,7 @@ a {
 }
 
 .about__me h2 {
+  margin-bottom: 20px;
   color: #2d3436;
   font-weight: 700;
   text-transform: uppercase;
