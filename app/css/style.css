@@ -119,6 +119,10 @@ a {
   color: white;
 }
 
+.line {
+  background: #2d3436;
+}
+
 .style_switcher {
   position: fixed;
   top: 100px;
@@ -423,7 +427,7 @@ a {
 }
 
 .hero__text h2 {
-  font-size: 18.5px;
+  font-size: 17px;
   color: white;
   color: #ffffff;
   text-transform: uppercase;
@@ -1382,18 +1386,11 @@ a {
 
 @media (min-width: 992px) {
   .portfolio__info {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
   .portfolio__info .landing_page {
     grid-column: auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .portfolio__info {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
