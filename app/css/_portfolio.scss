@@ -8,20 +8,13 @@
         padding-top: 2em;
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 1em;
+        grid-gap: 0.7em;
         @include tablet {
             grid-column-gap: 2em;
-            grid-template-columns: 1fr 1fr;
-            .landing_page {
-                grid-column: 1 / 4;
-            }
-        }
-        @include desktop {
             grid-template-columns: 1fr 1fr 1fr;
-            .landing_page {
-                grid-column: auto;
-            }
+        
         }
+        
        
         .project {
             position: relative;

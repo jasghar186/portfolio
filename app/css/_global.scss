@@ -70,5 +70,12 @@ a {
     color: white;
 }
 .line {
+    width: 90px;
+     height: 3px;
     background : #2d3436 ;
+    margin: 25px 0;
+    @include tablet {
+        margin: 25px auto;
+    }
 }
+    

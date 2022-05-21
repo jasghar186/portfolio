@@ -9,20 +9,17 @@
             padding-top: 2em;
             display: grid;
             grid-template-columns: 1fr;
-            grid-row-gap: 1em;
+            grid-row-gap: 2em;
             @include tablet {
                 grid-column-gap: 2em;
                 grid-template-columns: 1fr 1fr;
+                .upwork_box {
+                    grid-column: 1 / span 2;
+                }
             }
             @include desktop {
                 grid-template-columns: 1fr 1fr 1fr ;
-                .fiverr_box {
-                    grid-column: 1 / 4;
-                }
-            }
-            @include large_desktop {
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                .fiverr_box {
+                .upwork_box {
                     grid-column: auto;
                 }
             }

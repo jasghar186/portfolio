@@ -41,9 +41,6 @@
             @include tablet {
                 font-size: 30px;
             }
-            @include desktop {
-                font-size: 30px;
-            }
         }
         h2 {
             font-size: 17px;
@@ -69,7 +66,7 @@
             @include large-desktop {
                 font-size: 37px;
             }
-            p {
+            span {
                 padding-left: 0.5rem;
                 color: #f1c40f;
                 color: $subHeadingColor;

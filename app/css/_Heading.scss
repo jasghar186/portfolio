@@ -48,16 +48,7 @@
             font-size: 22px;
         }
     }
-    .line {
-        width: 90px;
-        height: 3px;
-        background-color: $white;
-        margin: 25px 0;
-        @include tablet {
-        margin: 25px auto ;
-
-        }
-    }
+   
     .desc {
         font-size: 16px;
         line-height: 30px;
